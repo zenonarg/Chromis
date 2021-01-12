@@ -795,7 +795,7 @@ public final class ProductsEditor extends JPanel implements EditorRecord {
             if (dPriceBuy == null || dPriceSell == null) {
                 m_jmargin.setText(null);
             } else {
-                m_jmargin.setText(Formats.CURRENCY.formatValue(dPriceSell - dPriceBuy));
+                m_jmargin.setText(Formats.CURRENCY.formatValue(dPriceSell + dPriceBuy));
             }
             reportlock = false;
         }
